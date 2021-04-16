@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <krpano version="1.19-pr16">
 
+    
+  <!-- Spot Style - Default Point Spot Style -->
+
+
+  <style name="IconDefaultPointSpotStyle"
+         url="%FIRSTXML%/spots/hotspot_neutral_user_defaultpoint0.png"
+         visible="false"
+         edge="center"
+         onhover="onhoverIconDefaultPointSpotStyle"
+         onout="onoutIconDefaultPointSpotStyle"
+
+
+         />
+  <action name="onhoverIconDefaultPointSpotStyle">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoutIconDefaultPointSpotStyle">
+    hideTooltip();
+
+
+
+  </action>
+
+
+
   <!-- unsupported kind of display : PointMap -->
 
 
@@ -11,10 +36,10 @@
 
 	<ptplugin name="floorPlan" engine="KolorFloorPlan">
 		<settings>
-			<option name="background_color" value="0d0d0d" type="string" />
-			<option name="background_lighter_color" value="0f0f0f" type="string" />
-			<option name="background_darker_color" value="0a0a0a" type="string" />
-			<option name="background_alpha" value="1" type="float" />
+			<option name="background_color" value="f2f2f2" type="string" />
+			<option name="background_lighter_color" value="ffffff" type="string" />
+			<option name="background_darker_color" value="cacaca" type="string" />
+			<option name="background_alpha" value="0" type="float" />
 			<option name="text_color" value="000000" type="string" />
 
 			<option name="resize" value="true" type="bool" />
@@ -30,12 +55,12 @@
 			<option name="display_radar" value="true" type="bool" />
 			<option name="radar_radius" value="50" type="int" />
 			<option name="radar_line_width" value="1" type="int" />
-			<option name="radar_line_color" value="3407ff" type="string" />
-			<option name="radar_line_alpha" value="0.50000762951094835" type="float" />
-			<option name="radar_fill_color" value="17f072" type="string" />
-			<option name="radar_fill_alpha" value="0.30000762951094834" type="float" />
+			<option name="radar_line_color" value="ff0000" type="string" />
+			<option name="radar_line_alpha" value="0.50196078431372548" type="float" />
+			<option name="radar_fill_color" value="05f3ff" type="string" />
+			<option name="radar_fill_alpha" value="0.29803921568627451" type="float" />
 			<option name="close_on_click" value="false" type="bool" />
-			<option name="position" value="bottomleft" type="string" />
+			<option name="position" value="topright" type="string" />
 			<option name="zorder" value="1" type="int" />
 			<option name="use_i18n" value="true" type="bool" />
 		</settings>
@@ -50,8 +75,11 @@
 					url="floorplan/map.jpg" 
 					title="project_floor_title"
 					heading="0">
-							<spot name="spotmap20" posX="0.484641999" posY="0.688244998" heading="-78.399999999997874" desc="spotmap20_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano39" jsClick="spotmap20ActionSpotFloorPlan">
-								<icon url="spots/hotspot_plan_user_defaultmap0.png" iconWidth="32" iconHeight="32" iconAnchor="center" />
+							<spot name="spotmap17" posX="0.525489986" posY="0.689453006" heading="-94.199999999998099" desc="spotmap17_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano10" jsClick="spotmap17ActionSpotFloorPlan">
+								<icon url="spots/hotspot_neutral_user_defaultmap0.png" iconWidth="32" iconHeight="32" iconAnchor="center" />
+							</spot>
+							<spot name="spotmap18" posX="0.486274987" posY="0.1875" heading="-95.1999999999978" desc="spotmap18_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano12" jsClick="spotmap18ActionSpotFloorPlan">
+								<icon url="spots/hotspot_neutral_user_defaultmap0.png" iconWidth="32" iconHeight="32" iconAnchor="center" />
 							</spot>
 				</floorplanItem>
 			
@@ -69,9 +97,13 @@
 	</action>
 	
 	
-		<!-- floorplan main spots counter : 1 -->
-			<action name="spotmap20ActionSpotFloorPlan">
-          mainloadscene(pano39);lookat(get(panoview.h), get(panoview.v), get(panoview.fov));
+		<!-- floorplan main spots counter : 2 -->
+			<action name="spotmap17ActionSpotFloorPlan">
+          mainloadscene(pano10);lookat(93.150000, -12.000300, 90.000000);
+
+</action>
+			<action name="spotmap18ActionSpotFloorPlan">
+          mainloadscene(pano12);lookat(get(panoview.h), get(panoview.v), get(panoview.fov));
 
 </action>
 	
@@ -235,7 +267,7 @@
 	
 	<ptplugin name="floorPlanArea" engine="kolorArea">
 	<settings>
-		<option name="position" value="bottomleft" type="string" />
+		<option name="position" value="topright" type="string" />
 		<option name="start_position" value="left" type="string" />
 		<option name="margin_x" value="0" type="int" />
 		<option name="margin_y" value="0" type="int" />
@@ -248,8 +280,8 @@
 		<option name="close_displayed" value="false" type="bool" />
 		<option name="close_text" value="floorPlandisplay_close_text" type="string" />
 
-		<option name="background_color" value="0d0d0d" type="string" />
-		<option name="background_alpha" value="1" type="float" />
+		<option name="background_color" value="f2f2f2" type="string" />
+		<option name="background_alpha" value="0" type="float" />
 		<option name="overlay_displayed" value="false" type="bool" />
 		<option name="overlay_color" value="000000" type="string" />
 		<option name="overlay_alpha" value="0.50000762951094835" type="float" />
@@ -260,10 +292,10 @@
 		<option name="bottomleft_radius" value="0" type="int" />
 		<option name="bottomright_radius" value="0" type="int" />
 		<option name="area_border_width" value="0" type="int" />
-		<option name="area_border_color" value="f25a0e" type="string" />
-		<option name="area_border_alpha" value="1" type="float" />
-		<option name="area_width" value="30" type="int" />
-		<option name="area_height" value="60" type="int" />
+		<option name="area_border_color" value="f2f2f2" type="string" />
+		<option name="area_border_alpha" value="0" type="float" />
+		<option name="area_width" value="20" type="int" />
+		<option name="area_height" value="40" type="int" />
 		<option name="area_width_unit" value="percent" type="string" />
 		<option name="area_height_unit" value="percent" type="string" />
 		<option name="animation" value="false" type="bool" />
