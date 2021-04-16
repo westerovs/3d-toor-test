@@ -11,9 +11,9 @@
 
 	<ptplugin name="floorPlan" engine="KolorFloorPlan">
 		<settings>
-			<option name="background_color" value="f2f2f2" type="string" />
-			<option name="background_lighter_color" value="ffffff" type="string" />
-			<option name="background_darker_color" value="cacaca" type="string" />
+			<option name="background_color" value="0d0d0d" type="string" />
+			<option name="background_lighter_color" value="0f0f0f" type="string" />
+			<option name="background_darker_color" value="0a0a0a" type="string" />
 			<option name="background_alpha" value="1" type="float" />
 			<option name="text_color" value="000000" type="string" />
 
@@ -50,10 +50,7 @@
 					url="floorplan/map.jpg" 
 					title="project_floor_title"
 					heading="0">
-							<spot name="spotmap20" posX="0.484641999" posY="0.688244998" heading="0" desc="spotmap20_tooltip" descType="tooltip" groupName="" isScene="true" planar="true" scene="" jsClick="spotmap20ActionSpotFloorPlan">
-								<icon url="spots/hotspot_plan_user_defaultmap0.png" iconWidth="32" iconHeight="32" iconAnchor="center" />
-							</spot>
-							<spot name="spotmap21" posX="0.518770993" posY="0.165246993" heading="0" desc="spotmap21_tooltip" descType="tooltip" groupName="" isScene="true" planar="true" scene="" jsClick="spotmap21ActionSpotFloorPlan">
+							<spot name="spotmap20" posX="0.484641999" posY="0.688244998" heading="-78.399999999997874" desc="spotmap20_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano39" jsClick="spotmap20ActionSpotFloorPlan">
 								<icon url="spots/hotspot_plan_user_defaultmap0.png" iconWidth="32" iconHeight="32" iconAnchor="center" />
 							</spot>
 				</floorplanItem>
@@ -72,11 +69,9 @@
 	</action>
 	
 	
-		<!-- floorplan main spots counter : 2 -->
+		<!-- floorplan main spots counter : 1 -->
 			<action name="spotmap20ActionSpotFloorPlan">
-
-</action>
-			<action name="spotmap21ActionSpotFloorPlan">
+          mainloadscene(pano39);lookat(get(panoview.h), get(panoview.v), get(panoview.fov));
 
 </action>
 	
@@ -253,7 +248,7 @@
 		<option name="close_displayed" value="false" type="bool" />
 		<option name="close_text" value="floorPlandisplay_close_text" type="string" />
 
-		<option name="background_color" value="f2f2f2" type="string" />
+		<option name="background_color" value="0d0d0d" type="string" />
 		<option name="background_alpha" value="1" type="float" />
 		<option name="overlay_displayed" value="false" type="bool" />
 		<option name="overlay_color" value="000000" type="string" />
@@ -265,10 +260,10 @@
 		<option name="bottomleft_radius" value="0" type="int" />
 		<option name="bottomright_radius" value="0" type="int" />
 		<option name="area_border_width" value="0" type="int" />
-		<option name="area_border_color" value="f2f2f2" type="string" />
+		<option name="area_border_color" value="f25a0e" type="string" />
 		<option name="area_border_alpha" value="1" type="float" />
-		<option name="area_width" value="20" type="int" />
-		<option name="area_height" value="40" type="int" />
+		<option name="area_width" value="30" type="int" />
+		<option name="area_height" value="60" type="int" />
 		<option name="area_width_unit" value="percent" type="string" />
 		<option name="area_height_unit" value="percent" type="string" />
 		<option name="animation" value="false" type="bool" />
