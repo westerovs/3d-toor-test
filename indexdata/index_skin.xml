@@ -1,38 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <krpano version="1.19-pr16">
 
-    
-  <!-- Spot Style - Default Point Spot Style -->
-
-
-  <style name="IconDefaultPointSpotStyle"
-         url="%FIRSTXML%/spots/hotspot_image_sequence_user_defaultpoint0.png"
-         visible="false"
-         frame="0"
-         lastframe="22"
-         framewidth="50"
-         frameheight="50"
-         stopspotsequence="false"
-         crop="0|0|50|50"
-         edge="center"
-         onloaded="startspotanimation(0.1);"
-         onhover="onhoverIconDefaultPointSpotStyle"
-         onout="onoutIconDefaultPointSpotStyle"
-
-
-         />
-  <action name="onhoverIconDefaultPointSpotStyle">
-    showtooltip('hotspot');
-  </action>
-  <action name="onoutIconDefaultPointSpotStyle">
-    hideTooltip();
-
-
-
-  </action>
-
-
-
   <!-- unsupported kind of display : PointMap -->
 
 
@@ -85,7 +53,7 @@
 							<spot name="spotmap20" posX="0.484641999" posY="0.688244998" heading="0" desc="spotmap20_tooltip" descType="tooltip" groupName="" isScene="true" planar="true" scene="" jsClick="spotmap20ActionSpotFloorPlan">
 								<icon url="spots/hotspot_plan_user_defaultmap0.png" iconWidth="32" iconHeight="32" iconAnchor="center" />
 							</spot>
-							<spot name="spotmap21" posX="0.518770993" posY="0.165246993" heading="-77.399999999998855" desc="spotmap21_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano12" jsClick="spotmap21ActionSpotFloorPlan">
+							<spot name="spotmap21" posX="0.518770993" posY="0.165246993" heading="0" desc="spotmap21_tooltip" descType="tooltip" groupName="" isScene="true" planar="true" scene="" jsClick="spotmap21ActionSpotFloorPlan">
 								<icon url="spots/hotspot_plan_user_defaultmap0.png" iconWidth="32" iconHeight="32" iconAnchor="center" />
 							</spot>
 				</floorplanItem>
@@ -109,7 +77,6 @@
 
 </action>
 			<action name="spotmap21ActionSpotFloorPlan">
-          mainloadscene(pano12);lookat(get(panoview.h), get(panoview.v), get(panoview.fov));
 
 </action>
 	

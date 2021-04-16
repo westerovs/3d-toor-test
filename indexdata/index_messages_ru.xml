@@ -9,9 +9,6 @@
 
 
 
-  <data name="ru_pano12_title"><![CDATA[3]]></data>
-
-
   <data name="ru_pano39_title"><![CDATA[_DSC8553e Panorama]]></data>
 
 
@@ -55,9 +52,6 @@
   <data name="ru_vr_setup_cb7"><![CDATA[Successful calibration]]></data>
   <data name="ru_vr_setup_cb8"><![CDATA[Calibration failed]]></data>
   <data name="ru_vr_setup_unavailable"><![CDATA[VR mode[br]is unavailable on your device]]></data>
-
-
-
 
 
 
