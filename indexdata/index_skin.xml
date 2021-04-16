@@ -63,9 +63,9 @@
 			<option name="radar_radius" value="50" type="int" />
 			<option name="radar_line_width" value="1" type="int" />
 			<option name="radar_line_color" value="3407ff" type="string" />
-			<option name="radar_line_alpha" value="0.50196078431372548" type="float" />
+			<option name="radar_line_alpha" value="0.50000762951094835" type="float" />
 			<option name="radar_fill_color" value="17f072" type="string" />
-			<option name="radar_fill_alpha" value="0.29803921568627451" type="float" />
+			<option name="radar_fill_alpha" value="0.30000762951094834" type="float" />
 			<option name="close_on_click" value="false" type="bool" />
 			<option name="position" value="bottomleft" type="string" />
 			<option name="zorder" value="1" type="int" />
@@ -82,10 +82,10 @@
 					url="floorplan/map.jpg" 
 					title="project_floor_title"
 					heading="0">
-							<spot name="spotmap20" posX="0.484641641" posY="0.688245296" heading="74.200000000001694" desc="spotmap20_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano10" jsClick="spotmap20ActionSpotFloorPlan">
+							<spot name="spotmap20" posX="0.484641999" posY="0.688244998" heading="0" desc="spotmap20_tooltip" descType="tooltip" groupName="" isScene="true" planar="true" scene="" jsClick="spotmap20ActionSpotFloorPlan">
 								<icon url="spots/hotspot_plan_user_defaultmap0.png" iconWidth="32" iconHeight="32" iconAnchor="center" />
 							</spot>
-							<spot name="spotmap21" posX="0.51877135" posY="0.165247023" heading="68.399999999998329" desc="spotmap21_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano12" jsClick="spotmap21ActionSpotFloorPlan">
+							<spot name="spotmap21" posX="0.518770993" posY="0.165246993" heading="-77.399999999998855" desc="spotmap21_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano12" jsClick="spotmap21ActionSpotFloorPlan">
 								<icon url="spots/hotspot_plan_user_defaultmap0.png" iconWidth="32" iconHeight="32" iconAnchor="center" />
 							</spot>
 				</floorplanItem>
@@ -106,7 +106,6 @@
 	
 		<!-- floorplan main spots counter : 2 -->
 			<action name="spotmap20ActionSpotFloorPlan">
-          mainloadscene(pano10);lookat(get(panoview.h), get(panoview.v), get(panoview.fov));
 
 </action>
 			<action name="spotmap21ActionSpotFloorPlan">
